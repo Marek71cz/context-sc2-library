@@ -1,0 +1,30 @@
+# XBMC Media Center language file
+# Addon Name: SC 2.0 - add to library
+# Addon id: context.sc2.library
+# Addon version: 0.1.0
+# Addon Provider: Marek
+msgid ""
+msgstr ""
+"Project-Id-Version: Kodi Addons\n"
+"Language-Team: LANGUAGE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+
+msgctxt "#30010"
+msgid "Library"
+msgstr ""
+
+msgctxt "#30011"
+msgid "Movies folder"
+msgstr ""
+
+msgctxt "#30012"
+msgid "TV Shows folder"
+msgstr ""
+
+msgctxt "#30100"
+msgid "Add to library"
+msgstr ""

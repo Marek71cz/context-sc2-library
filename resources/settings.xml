@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <category label="30010">
+        <setting label="30011" type="folder" id="movielFolder" default =""/>
+        <setting label="30012" type="folder" id="tvshowsFolder" default =""/>
+    </category>
+</settings>
