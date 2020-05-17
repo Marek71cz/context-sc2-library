@@ -1,0 +1,2 @@
+This plugin adds context menu to Stream Cinema 2.0 movies and TV show episodes - Add to library. This adds selected item to a user defined library and runs the scan of the library.
+To work properly, correct folders for movie and TV shows library must be defined in this plugin. 
