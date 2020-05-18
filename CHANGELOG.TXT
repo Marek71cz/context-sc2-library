@@ -1,2 +1,5 @@
+0.2.0
+Added check for properties - if library path not set, invoke settings dialog
+
 0.1.0
-First public version - adds movie to libraray
+First public version - adds movies to libraray
