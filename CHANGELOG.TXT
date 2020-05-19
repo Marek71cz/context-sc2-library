@@ -1,3 +1,8 @@
+0.4.0
+Added info message - adding TV Shows to library is not yet implemented
+Fixed language strings
+Code quality
+
 0.2.0
 Added check for properties - if library path not set, invoke settings dialog
 

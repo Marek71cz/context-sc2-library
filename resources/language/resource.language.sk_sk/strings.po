@@ -15,7 +15,7 @@ msgstr ""
 
 msgctxt "#30010"
 msgid "Library"
-msgstr "Knihžnica"
+msgstr "Knižnica"
 
 msgctxt "#30011"
 msgid "Movies folder"
@@ -25,6 +25,14 @@ msgctxt "#30012"
 msgid "TV Shows folder"
 msgstr "Adresár pre seriály"
 
-msgctxt "#30100"
+msgctxt "#30020"
 msgid "Add to library"
 msgstr "Pridať do knižnice"
+
+msgctxt "#30030"
+msgid "Not implemented"
+msgstr "Nie je dokončené"
+
+msgctxt "#30031"
+msgid "Adding TV Shows to library is not yet implemented."
+msgstr "Pridávanie seriálov do knižnice ešte nie je dokončené."

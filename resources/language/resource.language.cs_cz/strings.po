@@ -25,6 +25,14 @@ msgctxt "#30012"
 msgid "TV Shows folder"
 msgstr "Adresář pro seriály"
 
-msgctxt "#30100"
+msgctxt "#30020"
 msgid "Add to library"
 msgstr "Přidat do knihovny"
+
+msgctxt "#30030"
+msgid "Not implemented"
+msgstr "Není dokončeno"
+
+msgctxt "#30031"
+msgid "Adding TV Shows to library is not yet implemented."
+msgstr "Přidávání seriálů do knihovny ještě není dokončeno."

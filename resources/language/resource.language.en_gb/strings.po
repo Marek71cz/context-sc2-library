@@ -25,6 +25,14 @@ msgctxt "#30012"
 msgid "TV Shows folder"
 msgstr ""
 
-msgctxt "#30100"
+msgctxt "#30020"
 msgid "Add to library"
+msgstr ""
+
+msgctxt "#30030"
+msgid "Not implemented"
+msgstr ""
+
+msgctxt "#30031"
+msgid "Adding TV Shows to library is not yet implemented."
 msgstr ""
