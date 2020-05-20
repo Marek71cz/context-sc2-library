@@ -7,18 +7,12 @@ import os
 addon   = xbmcaddon.Addon()
 dbtype  = xbmc.getInfoLabel("ListItem.dbtype")
 
-def setLibraryPath():
-    addon.openSettings()
-
 def addMovie():
-    # create directory - original title and year
     originalTitle   = xbmc.getInfoLabel("ListItem.Originaltitle").decode('utf-8')
     year            = xbmc.getInfoLabel("ListItem.Year").decode('utf-8')
     moviePath       = xbmc.getInfoLabel("ListItem.FileNameAndPath")
 
     dirName = mf + originalTitle + ' (' + year + ')'
-
-    # xbmcgui.Dialog().ok(dbtype, dirName)
 
     if not xbmcvfs.exists(dirName):
         xbmcvfs.mkdir(dirName)
@@ -29,6 +23,7 @@ def addMovie():
     xbmc.executebuiltin('UpdateLibrary(video)')
 
 def addTVShow():
+    # ToDo:
     originalTitle   = xbmc.getInfoLabel("ListItem.TVShowTitle").decode('utf-8')
     tvShowTitle     = xbmc.getInfoLabel("ListItem.Title")
     year            = xbmc.getInfoLabel("ListItem.Year").decode('utf-8')
@@ -38,12 +33,12 @@ def addTVShow():
     dirName = tf + tvShowTitle + ' (' + year + ')'
     # xbmcgui.Dialog().ok(dbtype, 'Original title: ' + originalTitle, 'TV Show title: ' + tvShowTitle, 'Seasons count: ' + seasonsCount)
 
-    #ToDo: Create Tv Show directory and season subdirectories with episode links
+    # ToDo: Create Tv Show directory and season subdirectories with episode links
 
 # Check settings, whether library paths are set up corretly
 if dbtype == 'movie':
     if addon.getSetting("movielFolder") == '':
-        setLibraryPath()
+        addon.openSettings()
     mf = addon.getSetting("movielFolder")
     if mf != '':
         addMovie()
@@ -51,7 +46,7 @@ if dbtype == 'movie':
 if dbtype == 'tvshow':
     xbmcgui.Dialog().ok(addon.getLocalizedString(30030), addon.getLocalizedString(30031))
     #if addon.getSetting("tvshowsFolder") == '':
-    #    setLibraryPath()
+    #    addon.openSettings()
     #tf = addon.getSetting("tvshowsFolder")
     #if tf != '':
     #    addTVShow()

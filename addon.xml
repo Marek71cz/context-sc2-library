@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="context.sc2.library" name="SC 2.0 - add to library" version="0.4.0" provider-name="Marek">
+<addon id="context.sc2.library" name="SC 2.0 - add to library" version="0.5.0" provider-name="Marek">
 	<requires>
-		<import addon="xbmc.python" version="2.14.0"/>
+		<import addon="xbmc.python" version="2.23.0"/>
 	</requires>
-    <extension point="kodi.context.item" library="addtolib.py">
-        <item>
-            <label>30020</label>
-            <visible>String.StartsWith(ListItem.path,plugin://plugin.video.stream-cinema-2/)+[String.IsEqual(ListItem.dbtype,tvshow)|String.IsEqual(ListItem.dbtype,movie)]</visible>
-        </item>
+    <extension point="kodi.context.item">
+        <menu id="kodi.core.main">
+            <item library="addtolib.py">
+                <label>30020</label>
+                <visible>String.StartsWith(ListItem.path,plugin://plugin.video.stream-cinema-2/)+String.IsEqual(ListItem.dbtype,movie)</visible>
+                <!--
+                <visible>String.StartsWith(ListItem.path,plugin://plugin.video.stream-cinema-2/)+[String.IsEqual(ListItem.dbtype,tvshow)|String.IsEqual(ListItem.dbtype,movie)]</visible>
+                -->
+            </item>
+        </menu>
     </extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en_GB">Stream Cinema 2.0 context menu</summary>
