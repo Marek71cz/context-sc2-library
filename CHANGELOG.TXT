@@ -1,9 +1,12 @@
+0.6.0
+Replaced forbiden characters in file and directory names
+
 0.5.1
 Some code changes, no functionality changes
 
 0.5.0
 Updated context menu in addon
-Removed everything related to Tv Shows, only movie supported currently
+Removed everything related to Tv Shows, only movies supported currently
 
 0.4.0
 Added info message - adding TV Shows to library is not yet implemented

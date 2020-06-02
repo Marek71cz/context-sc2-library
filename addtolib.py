@@ -7,8 +7,15 @@ import os
 addon   = xbmcaddon.Addon()
 dbtype  = xbmc.getInfoLabel("ListItem.dbtype")
 
+def normalizeName(name):
+    name = name.replace(': ', '_')
+    name = name.replace(':', '_')
+    name = name.replace('*', '.')
+    return name
+
 def addMovie(mf):
     originalTitle   = xbmc.getInfoLabel("ListItem.Originaltitle").decode('utf-8')
+    originalTitle   = normalizeName(originalTitle)
     year            = xbmc.getInfoLabel("ListItem.Year").decode('utf-8')
     moviePath       = xbmc.getInfoLabel("ListItem.FileNameAndPath")
 
@@ -26,6 +33,7 @@ def addTVShow(tf):
     # ToDo:
     originalTitle   = xbmc.getInfoLabel("ListItem.TVShowTitle").decode('utf-8')
     tvShowTitle     = xbmc.getInfoLabel("ListItem.Title").decode('utf-8')
+    tvShowTitle     = normalizeName(tvShowTitle)
     year            = xbmc.getInfoLabel("ListItem.Year").decode('utf-8')
     tvShowPath      = xbmc.getInfoLabel("ListItem.FileNameAndPath")
     seasonsCount    = xbmc.getInfoLabel("ListItem.Property('TotalSeasons')")
