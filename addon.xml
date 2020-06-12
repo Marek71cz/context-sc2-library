@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="context.sc2.library" name="SC 2.0 - add to library" version="0.6.0" provider-name="Marek">
+<addon id="context.sc2.library" name="SC 2.0 - add to library" version="0.6.1" provider-name="Marek">
 	<requires>
 		<import addon="xbmc.python" version="2.23.0"/>
 	</requires>
@@ -7,10 +7,10 @@
         <menu id="kodi.core.main">
             <item library="addtolib.py">
                 <label>30020</label>
-                <visible>String.StartsWith(ListItem.path,plugin://plugin.video.stream-cinema-2/)+String.IsEqual(ListItem.dbtype,movie)</visible>
                 <!--
-                <visible>String.StartsWith(ListItem.path,plugin://plugin.video.stream-cinema-2/)+[String.IsEqual(ListItem.dbtype,tvshow)|String.IsEqual(ListItem.dbtype,movie)]</visible>
+                <visible>String.StartsWith(ListItem.path,plugin://plugin.video.stream-cinema-2/)+String.IsEqual(ListItem.dbtype,movie)</visible>
                 -->
+                <visible>String.StartsWith(ListItem.path,plugin://plugin.video.stream-cinema-2-release/)+[String.IsEqual(ListItem.dbtype,tvshow)|String.IsEqual(ListItem.dbtype,movie)]</visible>
             </item>
         </menu>
     </extension>

@@ -1,3 +1,6 @@
+0.6.1
+Hotfix for stable release
+
 0.6.0
 Replaced forbiden characters in file and directory names
 
