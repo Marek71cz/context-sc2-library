@@ -1,5 +1,5 @@
-Development ended. As from Stream Cinema Community ver. 1.4.0, it contains functionality "Add to library" for movies and TV shows. 
-Please, check my new addon "SCC - convert library" to  convert your movies and TV shows from old formats to new Stream Cinema Community format.
+Development ended. As from Stream Cinema Community ver. 1.4.0, it contains functionality "Add to library" for movies and TV shows. Please, check my new addon "SCC - convert library" to  convert your movies and TV shows from old formats to new Stream Cinema Community format.
+
 You can find it on GitLab under Stream Cinema Community project:
 https://gitlab.com/stream-cinema-community/library-tool
 
